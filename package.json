@@ -1,0 +1,57 @@
+{
+  "_from": "gatsby-remark-images-modal@^0.0.1",
+  "_id": "gatsby-remark-images-modal@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-VYuSEH0tg3WJh8DpMKeMm5G/K6DDInA+tPySzdsakDLPDU1dh8VjCDg4q45Rdu1xcnICISn9tXCjOdQ3cryKCQ==",
+  "_location": "/gatsby-remark-images-modal",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "gatsby-remark-images-modal@^0.0.1",
+    "name": "gatsby-remark-images-modal",
+    "escapedName": "gatsby-remark-images-modal",
+    "rawSpec": "^0.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_shasum": "8e42d463891cd0c84a4f70ec8df4b41965b22996",
+  "_spec": "gatsby-remark-images-modal@^0.0.1",
+  "_where": "/home/poznan.tbhydro.net/admin/Projekty/prywatne/gatsby/velomelon",
+  "author": {
+    "name": "Pawel Szafer",
+    "email": "pszafer@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pszafer/gatsby-remark-images-modal/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Add modal to remark images <picture> element.",
+  "homepage": "https://github.com/pszafer/gatsby-remark-images-modal",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "image",
+    "markdown",
+    "remark",
+    "zoom",
+    "picture",
+    "modal"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gatsby-remark-images-modal",
+  "peerDependencies": {
+    "gatsby": "^2.0.0",
+    "gatsby-remark-images": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pszafer/gatsby-remark-images-modal.git"
+  },
+  "version": "0.0.1"
+}
