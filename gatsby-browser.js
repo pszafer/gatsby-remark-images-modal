@@ -34,7 +34,7 @@ export const onClientEntry = (_, pluginOptions) => {
 
 
     .modal-content img {
-      width: unset !important;
+      width: 90% !important;
       height: unset !important;
       position: relative !important;
     }
@@ -42,7 +42,7 @@ export const onClientEntry = (_, pluginOptions) => {
       margin: auto;
       display: block;
       width: 80%;
-      max-width: 1100px;
+      max-width: 90%;
     }
 
       #caption {
