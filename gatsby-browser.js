@@ -7,7 +7,7 @@ export const onClientEntry = (_, pluginOptions) => {
       position: fixed; 
       top: -100%;
       z-index: -1;
-      padding-top: 100px; /* Location of the box */
+      padding-top: 80px; /* Location of the box */
       left: 0;
       width: 100%; /* Full width */
       height: 100%; /* Full height */
@@ -31,18 +31,21 @@ export const onClientEntry = (_, pluginOptions) => {
       cursor: zoom-in;
     }
 
-
+    .modal-content picture {
+      margin: auto;
+    }
 
     .modal-content img {
-      width: 90% !important;
-      height: unset !important;
+      max-width: 100%;
+      max-height: 90vh;
       position: relative !important;
     }
     .modal-content {
       margin: auto;
-      display: block;
+      display: grid;
       width: 80%;
       max-width: 90%;
+      height: 90%;
     }
 
       #caption {
@@ -53,7 +56,7 @@ export const onClientEntry = (_, pluginOptions) => {
         text-align: center;
         color: #ccc;
         padding: 10px 0;
-        height: 150px;
+        height: 8%;
       }
 
       .close {

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-images-modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add modal to remark images <picture> element.",
   "main": "index.js",
   "dependencies": {},
