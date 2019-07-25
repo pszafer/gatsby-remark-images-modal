@@ -99,22 +99,41 @@ export const onClientEntry = (_, pluginOptions) => {
 };
 
 export const onRouteUpdate = (_, pluginOptions) => {
+  runZoom();
+};
+
+function runZoom(){
   var modal = document.getElementById("zoom-modal");
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
   var isModalVisible = false;
-  [...document.querySelectorAll(".gatsby-resp-image-wrapper")].map(
-    (element, index, array) => {
+  let children = [...document.querySelectorAll(".gatsby-resp-image-wrapper")];
+  if (children.length == 0) {
+    let spans = document.getElementsByTagName('span');
+    for (let i = 0; i < spans.length; ++i) {
+      if (spans[i].className == "gatsby-resp-image-wrapper") {
+        children.push(spans[i])
+      };
+    }
+    if (children.length == 0){
+      console.log(document.getElementsByTagName('span'))
+      console.log(document)
+      console.log(children)
+      console.log("Nie moge znalezc obrazkow!")
+      return;
+    }
+  }
+  children.map(
+    (element) => {
       element.onclick = function (e) {
         let picture = this.getElementsByTagName("picture")[0]
         modalImg.innerHTML = picture.outerHTML
         captionText.innerHTML = this.alt ? this.alt : '';
         isModalVisible = true;
         modal.classList.add('show');
-        console.log("klikniete")
         e.stopPropagation();
       }
-  })
+    })
 
   let span = document.getElementsByClassName("close")[0];
   window.onclick = function (e) {
@@ -128,8 +147,8 @@ export const onRouteUpdate = (_, pluginOptions) => {
     }
   }
 
-  function hideModal(){
+  function hideModal() {
     modal.classList.remove('show');
     isModalVisible = false;
   }
-};
+}
