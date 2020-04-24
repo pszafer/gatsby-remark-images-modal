@@ -12,16 +12,17 @@ TODO
 ## How to use
 
 ```js
-// In your gatsby-config.js, under gatsby-transformer-remark plugins
+// In your gatsby-config.js, add to your gatsby-transformer-remark plugins
 
 plugins: [
-{
-  resolve: `gatsby-transformer-remark`,
-  options: {
-    plugins: [
-      `gatsby-remark-images`,
-      `gatsby-remark-images-modal`,
-    ],
-  }
-];
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-images`,
+        `gatsby-remark-images-modal`,
+      ],
+    },
+  },
+],
 ```
